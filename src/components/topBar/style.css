@@ -1,0 +1,26 @@
+.topBar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 20px 10px 0;
+}
+.topBar .topBarText {
+  font-size: 18px;
+  color: #2964e1;
+  margin: 0 10px 0 0;
+}
+.topBar .topBarImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.topBar .topBarIcon {
+  margin-inline: 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

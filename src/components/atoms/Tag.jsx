@@ -25,7 +25,7 @@ export const Tag = ({children, color, variant}) => {
   const styles = getStyles(variant, color)
   return (
     <div className='tag' style={styles}>
-      <p className='tag__label'>{children}</p>
+      <p className='tag__label'>{children.toUpperCase()}</p>
     </div>
   )
 }

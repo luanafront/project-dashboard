@@ -2,7 +2,7 @@ import './styles/Text.sass'
 import PropTypes from "prop-types";
 import {Icon} from "../atoms/Icon.jsx";
 
-export const Text = ({isBold, collapse, children, icon}) => {
+export const Text = ({isBold, collapse, children, icon, className}) => {
   const style = {
     fontWeight: isBold ? 'bold' : 'normal',
   }
@@ -25,7 +25,7 @@ export const Text = ({isBold, collapse, children, icon}) => {
 					</div>
 				)
 			}
-			<p className='text' style={style}>
+			<p className={`text ${className}`} style={style}>
 				{children}
 			</p>
 		</div>
@@ -36,5 +36,6 @@ Text.propTypes = {
   isBold: PropTypes.bool,
   collapse: PropTypes.number,
   children: PropTypes.string.isRequired,
-  icon: PropTypes.string
+  icon: PropTypes.string,
+  className: PropTypes.string
 }

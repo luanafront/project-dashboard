@@ -1,12 +1,13 @@
 .tag {
   display: inline-block;
-  padding: 3px 15px;
+  padding: 8px 15px;
   border-radius: 15px;
 }
 
 .tag__label {
   margin: 0;
   font-size: 12px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=Tag.css.map */

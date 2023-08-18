@@ -1,7 +1,7 @@
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsIcon from '@mui/icons-material/Settings';
-import './style.sass';
-import ImgGato from '../../../assets/gato.png';
+import './styles/style.sass';
+import ImgGato from '../../assets/gato.png';
 
 export const TopBar = () => {
 	return (

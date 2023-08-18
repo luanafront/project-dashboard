@@ -18,7 +18,7 @@ export const InputSearch = () => {
 			</div>
 			<div className='inputSearch__box--filter boxTexts'>
 				<Icon icon='Filter'/>
-				<p className='inputSearch__text'>Filtro</p>
+				<p className='inputSearch__text inputSearch__text--filter'>Filtro</p>
 			</div>
 		</div>
 	)

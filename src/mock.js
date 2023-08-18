@@ -43,7 +43,7 @@ export const mockInfo = [
     img: 'https://picsum.photos/201/300',
     tags : [
       {
-        color: '#489348',
+        color: '#decb59',
         variant: 'secondary',
         tag: 'sentimento',
       },
@@ -75,7 +75,7 @@ export const mockInfo = [
     img: 'https://picsum.photos/202/300',
     tags : [
       {
-        color: '#489348',
+        color: '#8a3939',
         variant: 'secondary',
         tag: 'sentimento',
       },

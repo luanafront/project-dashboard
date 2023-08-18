@@ -1,4 +1,4 @@
-import {TopBar} from "./components/templates/topBar/TopBar.jsx";
+import {TopBar} from "./components/templates/TopBar.jsx";
 import './App.css'
 import {News} from "./components/pages/News.jsx";
 import {mockInfo} from "./mock.js";

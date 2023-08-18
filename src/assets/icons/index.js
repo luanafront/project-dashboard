@@ -13,8 +13,14 @@ export { default as Admin } from './admin.svg';
 // noinspection JSUnusedGlobalSymbols
 export { default as ArrowBottom } from './arrowBottom.svg';
 // noinspection JSUnusedGlobalSymbols
+export { default as ArrowBottomNew } from './arrowBottomNew.svg';
+// noinspection JSUnusedGlobalSymbols
 export { default as MagnifyingGlass } from './magnifying-glass.svg';
 // noinspection JSUnusedGlobalSymbols
 export { default as ArrowRight } from './arrowRight.svg';
 // noinspection JSUnusedGlobalSymbols
 export { default as Filter } from './filter.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as NewsPaper } from './newspaper.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as NewsPaperBlack } from './newspaperBlack.svg';

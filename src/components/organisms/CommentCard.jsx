@@ -4,7 +4,6 @@ import './styles/CommentCard.sass'
 import {Text} from "../molecules/Text.jsx";
 import {Divisor} from "../atoms/Divisor.jsx";
 import {infoPropType} from "../propsTypes.js";
-
 export const CommentCard = ({info}) => {
 	const {tier, tags, comment, commentTitle, font, section} = info
 
@@ -17,7 +16,7 @@ export const CommentCard = ({info}) => {
 			<div className='commentCardBox boxInfoSection '>
 				<p className='boxInfo__title'>Veículo e seção</p>
 				<div className='boxInfo__subtitle fontAndSection'>
-					<Text collapse={45} icon='News' className='fontAndSection__font'>
+					<Text collapse={45} icon='NewsPaperBlack' className='fontAndSection__font'>
 						{`Fonte: ${font}`}
 					</Text>
 					<Text collapse={25} className='fontAndSection__section'>

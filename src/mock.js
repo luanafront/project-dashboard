@@ -1,0 +1,130 @@
+export const mockInfo = [
+  {
+    id: 1,
+    tier: {
+      tier: 'Tier 1',
+      color: '#57087c',
+      variant: 'primary',
+    },
+    publishedAt: '20 de Maio de 2023',
+    views: 35689,
+    img: 'https://picsum.photos/207/300',
+    tags : [
+      {
+        color: '#489348',
+        variant: 'secondary',
+        tag: 'sentimento',
+      },
+      {
+        color: '#2727cb',
+        variant: 'primary',
+        tag: 'citação',
+      },
+      {
+        color: '#297bb6',
+        variant: 'primary',
+        tag: 'segmento',
+      }
+    ],
+    font: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    section: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    commentTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+  },
+  {
+    id: 2,
+    tier: {
+      tier: 'Tier 1',
+      color: '#57087c',
+      variant: 'primary',
+    },
+    publishedAt: '20 de Maio de 2023',
+    views: 35689,
+    img: 'https://picsum.photos/201/300',
+    tags : [
+      {
+        color: '#489348',
+        variant: 'secondary',
+        tag: 'sentimento',
+      },
+      {
+        color: '#2727cb',
+        variant: 'primary',
+        tag: 'citação',
+      },
+      {
+        color: '#297bb6',
+        variant: 'primary',
+        tag: 'segmento',
+      }
+    ],
+    font: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    section: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    commentTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+  },
+  {
+    id: 3,
+    tier: {
+      tier: 'Tier 1',
+      color: '#57087c',
+      variant: 'primary',
+    },
+    publishedAt: '20 de Maio de 2023',
+    views: 35689,
+    img: 'https://picsum.photos/202/300',
+    tags : [
+      {
+        color: '#489348',
+        variant: 'secondary',
+        tag: 'sentimento',
+      },
+      {
+        color: '#2727cb',
+        variant: 'primary',
+        tag: 'citação',
+      },
+      {
+        color: '#297bb6',
+        variant: 'primary',
+        tag: 'segmento',
+      }
+    ],
+    font: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    section: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    commentTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+  },
+  {
+    id: 4,
+    tier: {
+      tier: 'Tier 1',
+      color: '#57087c',
+      variant: 'primary',
+    },
+    publishedAt: '20 de Maio de 2023',
+    views: 35689,
+    img: 'https://picsum.photos/203/300',
+    tags : [
+      {
+        color: '#489348',
+        variant: 'secondary',
+        tag: 'sentimento',
+      },
+      {
+        color: '#2727cb',
+        variant: 'primary',
+        tag: 'citação',
+      },
+      {
+        color: '#297bb6',
+        variant: 'primary',
+        tag: 'segmento',
+      }
+    ],
+    font: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    section: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    commentTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
+  },
+]

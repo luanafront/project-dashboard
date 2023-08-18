@@ -4,4 +4,7 @@ export { default as News } from './news.svg';
 export { default as Email } from './email.svg';
 export { default as NPS } from './nps.svg';
 export { default as Admin } from './admin.svg';
-
+export { default as ArrowBottom } from './arrowBottom.svg';
+export { default as MagnifyingGlass } from './magnifying-glass.svg';
+export { default as ArrowRight } from './arrowRight.svg';
+export { default as Filter } from './filter.svg';

@@ -1,0 +1,39 @@
+.pageNews {
+  padding: 20px;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.pageNews__header {
+  padding-block: 10px;
+}
+
+.newsHeader__title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.newsHeader__subTitle {
+  font-size: 18px;
+  margin-block: 8px;
+  font-weight: 400;
+}
+
+.newsMain__commentsTitle {
+  font-size: 20px;
+  margin: 40px 0 30px 0;
+  font-weight: bold;
+}
+
+.commentsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: 40px;
+  padding: 0;
+}
+
+.commentsGrid__comment {
+  list-style: none;
+}
+
+/*# sourceMappingURL=News.css.map */

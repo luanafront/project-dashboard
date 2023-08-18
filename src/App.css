@@ -1,0 +1,8 @@
+.app{
+    display: flex;
+}
+
+.app__content {
+    flex-basis: 100%;
+    height: calc(100vh - 101px)
+}

@@ -1,12 +1,12 @@
 import {PostInfo} from "../molecules/PostInfo.jsx";
 import {Tag} from "../atoms/Tag.jsx";
-import PropTypes from "prop-types";
 import './styles/CommentCard.sass'
 import {Text} from "../molecules/Text.jsx";
 import {Divisor} from "../atoms/Divisor.jsx";
+import {infoPropType} from "../propsTypes.js";
 
 export const CommentCard = ({info}) => {
-	const {tier, tags} = info
+	const {tier, tags, comment, commentTitle, font, section} = info
 
 	return (
 		<div className='commentCard'>
@@ -18,26 +18,20 @@ export const CommentCard = ({info}) => {
 				<p className='boxInfo__title'>Veículo e seção</p>
 				<div className='boxInfo__subtitle fontAndSection'>
 					<Text collapse={45} icon='News' className='fontAndSection__font'>
-						Fonte: lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+						{`Fonte: ${font}`}
 					</Text>
-					<Text collapse={25}>
-						Seção: lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+					<Text collapse={25} className='fontAndSection__section'>
+						{`Seção: ${section}`}
 					</Text>
 				</div>
 			</div>
 			<Divisor className={'commentCard__divisor'} color='#f5eaea'/>
 			<div className='commentCardBox boxInfoSection'>
 				<Text collapse={65} isBold className={'boxInfoSection__text'}>
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+					{commentTitle}
 				</Text>
 				<Text collapse={500} >
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-					lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+					{comment}
 				</Text>
 			</div>
 			<Divisor className={'commentCard__divisor'} color='#f5eaea'/>
@@ -54,19 +48,5 @@ export const CommentCard = ({info}) => {
 
 
 CommentCard.propTypes = {
-	info: PropTypes.shape({
-		tier: PropTypes.shape({
-			color: PropTypes.string.isRequired,
-			variant: PropTypes.string.isRequired,
-			tier: PropTypes.string.isRequired
-		}).isRequired,
-		publishedAt: PropTypes.string.isRequired,
-		views: PropTypes.number.isRequired,
-		img: PropTypes.string.isRequired,
-		tags: PropTypes.arrayOf(PropTypes.shape({
-			color: PropTypes.string.isRequired,
-			variant: PropTypes.string.isRequired,
-			tag: PropTypes.string.isRequired
-		}).isRequired).isRequired
-	})
+	info: infoPropType
 }

@@ -6,6 +6,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  overflow: hidden;
 }
 
 .boxInfoHeader {
@@ -29,6 +30,10 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+}
+
+.fontAndSection__font, .fontAndSection__section {
+  font-size: 14px;
 }
 
 .fontAndSection__font:after {

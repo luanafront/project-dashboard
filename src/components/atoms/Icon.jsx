@@ -13,6 +13,6 @@ export const Icon = ({icon, width}) => {
 }
 
 Icon.propTypes = {
-	icon: PropTypes.string.isRequired,
+	icon: PropTypes.string,
 	width: PropTypes.string
 }

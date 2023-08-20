@@ -1,20 +1,26 @@
 import {PostInfo} from "../molecules/PostInfo.jsx";
 import {Tag} from "../atoms/Tag.jsx";
-import './styles/CommentCard.sass'
+import './styles/NewsCard.sass'
 import {Text} from "../molecules/Text.jsx";
 import {Divisor} from "../atoms/Divisor.jsx";
 import {infoPropType} from "../propsTypes.js";
-export const CommentCard = ({info}) => {
-	const {tier, tags, comment, commentTitle, font, section, title} = info
+import {useNavigate} from "react-router-dom";
+export const NewsCard = ({info}) => {
+	const navigate = useNavigate()
+	const {tier, tags, news, newsTitle, font, section} = info
+
+	const goToDetailNews = () => {
+		navigate(`/${info.id}`)
+	}
 
 	return (
-		<div className='commentCard'>
-			<div className='commentCardBox boxInfoHeader'>
+		<div className='newsCard' onClick={goToDetailNews}>
+			<div className='newsCardBox boxInfoHeader'>
 				<PostInfo info={info}/>
 				<Tag color={tier.color} variant={tier.variant}>{tier.tier}</Tag>
 			</div>
-			<div className='commentCardBox boxInfoSection '>
-				<p className='boxInfo__title'>{title} {info.id}</p>
+			<div className='newsCardBox boxInfoSection '>
+				<p className='boxInfo__title'>Veículo e seção {info.id}</p>
 				<div className='boxInfo__subtitle fontAndSection'>
 					<Text collapse={45} icon='NewsPaperBlack' className='fontAndSection__font'>
 						{`Fonte: ${font}`}
@@ -24,17 +30,17 @@ export const CommentCard = ({info}) => {
 					</Text>
 				</div>
 			</div>
-			<Divisor className={'commentCard__divisor'} color='#f5eaea'/>
-			<div className='commentCardBox boxInfoSection'>
+			<Divisor className={'newsCard__divisor'} color='#f5eaea'/>
+			<div className='newsCardBox boxInfoSection'>
 				<Text collapse={65} isBold className={'boxInfoSection__text'}>
-					{commentTitle}
+					{newsTitle}
 				</Text>
 				<Text collapse={500} >
-					{comment}
+					{news}
 				</Text>
 			</div>
-			<Divisor className={'commentCard__divisor'} color='#f5eaea'/>
-			<div className='commentCard__classification classificationBox'>
+			<Divisor className={'newsCard__divisor'} color='#f5eaea'/>
+			<div className='newsCard__classification classificationBox'>
 				<p className='classificationBox__title'>Classificações</p>
 				<div className='classificationBox__tags tagBox'>
 					<p className='tagBox__text'>Tags:</p>
@@ -45,7 +51,6 @@ export const CommentCard = ({info}) => {
 	)
 }
 
-
-CommentCard.propTypes = {
+NewsCard.propTypes = {
 	info: infoPropType
 }

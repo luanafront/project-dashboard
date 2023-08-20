@@ -3,6 +3,8 @@ import './App.css'
 import {News} from "./components/pages/News.jsx";
 import {mockInfo} from "./mock.js";
 import {AsideBar} from "./components/molecules/AsideBar.jsx";
+import {Route, Routes} from "react-router-dom";
+import {NewsDetail} from "./components/pages/NewsDetail.jsx";
 
 export const App = () => {
 
@@ -11,7 +13,10 @@ export const App = () => {
       <AsideBar/>
       <section className='app__content'>
         <TopBar/>
-        <News infos={mockInfo}/>
+        <Routes>
+          <Route path='/' element={<News infos={mockInfo}/>}/>
+          <Route path='/:id' element={<NewsDetail/>}/>
+        </Routes>
       </section>
     </div>
   )

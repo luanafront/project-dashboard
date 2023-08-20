@@ -18,14 +18,14 @@
   color: #656565;
 }
 
-.commentsGrid {
+.newssGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   grid-gap: 40px;
   padding: 0;
 }
 
-.commentsGrid__comment {
+.newssGrid__news {
   list-style: none;
 }
 

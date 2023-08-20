@@ -4,21 +4,23 @@ import PropTypes from "prop-types";
 import {infoPropType} from "../propsTypes.js";
 import {Footer} from "../templates/Footer.jsx";
 import {useState} from "react";
-import {CommentSection} from "./CommentSection.jsx";
+import {NewsSection} from "./NewsSection.jsx";
 
 export const News = ({infos}) => {
 	const cardsPerPage = 4
-	const pagesAmount = Math.ceil(infos.length / cardsPerPage)
 
 	const [infosState, setInfosState] = useState(infos)
 	const [currentPage, setCurrentPage] = useState(1)
 
+	const pagesAmount = Math.ceil(infosState.length / cardsPerPage)
+
 	const filterInfos = (value) => {
+		setCurrentPage(1)
 		if (!value) return setInfosState(infos)
 
 		const newInfos = infosState.filter(info => {
 			const valueLower = value.toLowerCase()
-			const title = info.title.toLowerCase()
+			const title = info.newsTitle.toLowerCase()
 			const tags = info.tags.map(tag => tag.tag.toLowerCase())
 			const tier = info.tier.tier.toLowerCase()
 
@@ -26,6 +28,9 @@ export const News = ({infos}) => {
 
 			return filterBy.some(filter => filter.includes(valueLower))
 		})
+
+		if(!newInfos.length) return setInfosState(infos)
+
 		setInfosState(newInfos)
 	}
 
@@ -39,7 +44,7 @@ export const News = ({infos}) => {
 				</header>
 				<main className='pageNews__main newsMain'>
 					<InputSearch onSearchValue={filterInfos} />
-					<CommentSection
+					<NewsSection
 						infos={infosState}
 						pagesAmount={pagesAmount}
 						currentPage={currentPage}

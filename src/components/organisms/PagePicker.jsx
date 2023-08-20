@@ -60,7 +60,7 @@ export const PagePicker = ({pagesAmount, setCurrentPage, currentPage}) => {
 					<PageButton
 						key={index}
 						onClick={() => setCurrentPage(page)}
-						pageNumber={page}
+						pageNumber={String(page)}
 						currentPage={currentPage}
 					/>
         ))

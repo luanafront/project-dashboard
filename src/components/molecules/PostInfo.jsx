@@ -14,7 +14,7 @@ export const PostInfo = ({info}) => {
 			<div className='postInfoBox__info info'>
 				<PublishedAt date={publishedAt}/>
 				<Text icon='Eye'>
-					Visualizações: {views}
+					{`Visualizações: ${views}`}
 				</Text>
 			</div>
 		</div>

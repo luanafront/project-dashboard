@@ -1,4 +1,4 @@
-.commentSectionHeader {
+.newsSectionHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,10 +6,16 @@
   margin-bottom: 20px;
 }
 
-.commentSectionHeader__title {
+.newsSectionHeader__title {
   font-size: 20px;
   margin: 40px 0 30px 0;
   font-weight: bold;
 }
 
-/*# sourceMappingURL=CommentSection.css.map */
+.paginationBotton {
+  width: 40%;
+  margin-inline: auto;
+  padding-block: 10px;
+}
+
+/*# sourceMappingURL=NewsSection.css.map */

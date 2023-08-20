@@ -5,7 +5,7 @@ import './styles/PageButton.sass';
 export const PageButton = ({onClick, icon, pageNumber = '', currentPage}) => {
 	const iconWidth = '15px'
 
-	const isCurrentPage = pageNumber === currentPage
+	const isCurrentPage = pageNumber === String(currentPage)
 
 	return (
 		<li className='itemBox'>

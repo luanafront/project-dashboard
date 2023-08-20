@@ -32,3 +32,27 @@ export { default as LastPage } from './lastPage.svg';
 export { default as PreviousPage } from './previousPage.svg';
 // noinspection JSUnusedGlobalSymbols
 export { default as NextPage } from './nextPage.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as ChevronLeft } from './chevron-left.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Paperclip } from './paperclip.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Calendar } from './calendar.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Centimeter } from './centimeter.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Chevron } from './chevron-left.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Star } from './star.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Gps } from './gps.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Media } from './media.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Voice } from './voice.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Writer } from './writer.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Tag } from './tag.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as Buildings } from './buildings.svg';

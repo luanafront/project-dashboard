@@ -5,7 +5,7 @@ import {Text} from "../molecules/Text.jsx";
 import {Divisor} from "../atoms/Divisor.jsx";
 import {infoPropType} from "../propsTypes.js";
 export const CommentCard = ({info}) => {
-	const {tier, tags, comment, commentTitle, font, section} = info
+	const {tier, tags, comment, commentTitle, font, section, title} = info
 
 	return (
 		<div className='commentCard'>
@@ -14,7 +14,7 @@ export const CommentCard = ({info}) => {
 				<Tag color={tier.color} variant={tier.variant}>{tier.tier}</Tag>
 			</div>
 			<div className='commentCardBox boxInfoSection '>
-				<p className='boxInfo__title'>Veículo e seção</p>
+				<p className='boxInfo__title'>{title}</p>
 				<div className='boxInfo__subtitle fontAndSection'>
 					<Text collapse={45} icon='NewsPaperBlack' className='fontAndSection__font'>
 						{`Fonte: ${font}`}

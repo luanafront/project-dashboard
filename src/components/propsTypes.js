@@ -13,6 +13,7 @@ export const infoPropType = PropTypes.shape({
   section: PropTypes.string.isRequired,
   commentTitle: PropTypes.string.isRequired,
   comment: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.shape({
     color: PropTypes.string.isRequired,
     variant: PropTypes.string.isRequired,

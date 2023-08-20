@@ -1,8 +1,8 @@
 import './styles/InputSearch.sass';
 import {Icon} from "../atoms/Icon.jsx";
-import React, { useState } from 'react';
+import PropTypes from "prop-types";
 
-export const InputSearch = () => {
+export const InputSearch = ({onSearchValue}) => {
 	return (
 		<div className='inputSearch'>
 			<div className='inputSearch__box--marks boxTexts'>
@@ -18,6 +18,9 @@ export const InputSearch = () => {
 				<input
 					className='inputSearch__input'
 					placeholder='Pesquise por: Titulos/Assuntos/Veiculos ou Tier'
+					onChange={(e) => {
+						onSearchValue(e.target.value)
+					}}
 				/>
 			</div>
 			<div className='inputSearch__box--filter boxTexts'>
@@ -26,4 +29,8 @@ export const InputSearch = () => {
 			</div>
 		</div>
 	)
+}
+
+InputSearch.propTypes = {
+	onSearchValue: PropTypes.func.isRequired
 }

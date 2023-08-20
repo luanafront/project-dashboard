@@ -1,6 +1,7 @@
 export const mockInfo = [
   {
     id: 1,
+    title: 'Titulo para teste',
     tier: {
       tier: 'Tier 1',
       color: '#57087c',
@@ -23,7 +24,7 @@ export const mockInfo = [
       {
         color: '#297bb6',
         variant: 'primary',
-        tag: 'segmento',
+        tag: 'diversos',
       }
     ],
     font: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl. Donec auctor, nisl eget ultricies ultrices, nisl nisl lacinia nisl, eget ultricies nisl nisl eget nisl.',
@@ -33,6 +34,7 @@ export const mockInfo = [
   },
   {
     id: 2,
+    title: 'Veículo e seção',
     tier: {
       tier: 'Tier 1',
       color: '#57087c',
@@ -65,8 +67,9 @@ export const mockInfo = [
   },
   {
     id: 3,
+    title: 'Veículo e seção',
     tier: {
-      tier: 'Tier 1',
+      tier: 'Tier 3',
       color: '#57087c',
       variant: 'primary',
     },
@@ -97,8 +100,9 @@ export const mockInfo = [
   },
   {
     id: 4,
+    title: 'Veículo e seção',
     tier: {
-      tier: 'Tier 1',
+      tier: 'Tier 2',
       color: '#57087c',
       variant: 'primary',
     },

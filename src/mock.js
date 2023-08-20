@@ -3,12 +3,12 @@ export const mockInfo = [
     id: 1,
     title: 'Titulo para teste',
     tier: {
-      tier: 'Tier 1',
+      tier: 'Tier 30',
       color: '#57087c',
       variant: 'primary',
     },
     publishedAt: '20 de Maio de 2023',
-    views: 35689,
+    views: 3,
     centimeter: 1,
     valuation: 457,
     additionalTags: [

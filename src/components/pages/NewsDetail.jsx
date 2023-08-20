@@ -18,7 +18,6 @@ export const NewsDetail = () => {
     tier,
     tags,
     news,
-    newsTitle,
     font,
     section,
     title,
@@ -30,7 +29,7 @@ export const NewsDetail = () => {
   } = info
 
   return (
-    <>
+    <div className='newsDetailBox'>
       <div className='newsDetail'>
         <header className='newsDetailHeader'>
           <div className='newsDetailHeader__boxTitle boxTitle'>
@@ -102,6 +101,6 @@ export const NewsDetail = () => {
         </main>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }

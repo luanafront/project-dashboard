@@ -2,9 +2,11 @@ import './styles/AsideBar.sass';
 import {Text} from "./Text.jsx";
 import {Icon} from "../atoms/Icon.jsx";
 import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 export const AsideBar = () => {
 	const [news, setNews] = useState(false);
+	const navigate = useNavigate();
 
 	return (
 		<div className='asideBar'>
@@ -20,7 +22,7 @@ export const AsideBar = () => {
 						news &&
 						<div className='listAside__item--subtitle itemSubtitle'>
 							<p className='itemSubtitle__text'>Relatórios</p>
-							<p className='itemSubtitle__text'>Consulta de notícias</p>
+							<p className='itemSubtitle__text' onClick={() => navigate('/')}>Consulta de notícias</p>
 						</div>
 					}
 				</li>

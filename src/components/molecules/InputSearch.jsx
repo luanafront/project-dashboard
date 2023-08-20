@@ -1,5 +1,6 @@
 import './styles/InputSearch.sass';
 import {Icon} from "../atoms/Icon.jsx";
+import React, { useState } from 'react';
 
 export const InputSearch = () => {
 	return (
@@ -14,7 +15,10 @@ export const InputSearch = () => {
 			</div>
 			<div className='inputSearch__box--search boxTexts'>
 				<Icon icon='MagnifyingGlass'/>
-				<input className='inputSearch__input' placeholder='Pesquise por: Titulos/Assuntos/Veiculos ou Tier'/>
+				<input
+					className='inputSearch__input'
+					placeholder='Pesquise por: Titulos/Assuntos/Veiculos ou Tier'
+				/>
 			</div>
 			<div className='inputSearch__box--filter boxTexts'>
 				<Icon icon='Filter'/>

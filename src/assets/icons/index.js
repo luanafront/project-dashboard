@@ -24,3 +24,11 @@ export { default as Filter } from './filter.svg';
 export { default as NewsPaper } from './newspaper.svg';
 // noinspection JSUnusedGlobalSymbols
 export { default as NewsPaperBlack } from './newspaperBlack.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as FirstPage } from './firstPage.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as LastPage } from './lastPage.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as PreviousPage } from './previousPage.svg';
+// noinspection JSUnusedGlobalSymbols
+export { default as NextPage } from './nextPage.svg';

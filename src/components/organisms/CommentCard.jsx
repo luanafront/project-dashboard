@@ -14,7 +14,7 @@ export const CommentCard = ({info}) => {
 				<Tag color={tier.color} variant={tier.variant}>{tier.tier}</Tag>
 			</div>
 			<div className='commentCardBox boxInfoSection '>
-				<p className='boxInfo__title'>{title}</p>
+				<p className='boxInfo__title'>{title} {info.id}</p>
 				<div className='boxInfo__subtitle fontAndSection'>
 					<Text collapse={45} icon='NewsPaperBlack' className='fontAndSection__font'>
 						{`Fonte: ${font}`}

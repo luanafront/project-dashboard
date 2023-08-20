@@ -1,13 +1,17 @@
 import {InputSearch} from "../molecules/InputSearch.jsx";
 import './styles/News.sass';
-import {CommentCard} from "../organisms/CommentCard.jsx";
 import PropTypes from "prop-types";
 import {infoPropType} from "../propsTypes.js";
 import {Footer} from "../templates/Footer.jsx";
 import {useState} from "react";
+import {CommentSection} from "./CommentSection.jsx";
 
 export const News = ({infos}) => {
+	const cardsPerPage = 4
+	const pagesAmount = Math.ceil(infos.length / cardsPerPage)
+
 	const [infosState, setInfosState] = useState(infos)
+	const [currentPage, setCurrentPage] = useState(1)
 
 	const filterInfos = (value) => {
 		if (!value) return setInfosState(infos)
@@ -35,16 +39,12 @@ export const News = ({infos}) => {
 				</header>
 				<main className='pageNews__main newsMain'>
 					<InputSearch onSearchValue={filterInfos} />
-					<p className='newsMain__commentsTitle'>Comentários encontrados</p>
-					<ul className='newsMain__comments commentsGrid'>
-						{
-							infosState.map(info => (
-								<li className='commentsGrid__comment' key={info.id}>
-									<CommentCard info={info}/>
-								</li>
-							))
-						}
-					</ul>
+					<CommentSection
+						infos={infosState}
+						pagesAmount={pagesAmount}
+						currentPage={currentPage}
+						setCurrentPage={setCurrentPage}
+					/>
 				</main>
 			</article>
 			<Footer/>

@@ -1,0 +1,15 @@
+.commentSectionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.commentSectionHeader__title {
+  font-size: 20px;
+  margin: 40px 0 30px 0;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=CommentSection.css.map */

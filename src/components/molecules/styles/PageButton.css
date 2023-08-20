@@ -1,0 +1,21 @@
+.itemBox {
+  list-style: none;
+}
+
+.itemBox__button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  font-weight: bold;
+}
+
+.itemBox__button--active {
+  color: #2964e1;
+}
+
+.itemBox__button:hover {
+  color: #2964e1;
+}
+
+/*# sourceMappingURL=PageButton.css.map */
